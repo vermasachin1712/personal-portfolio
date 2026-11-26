@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sachin Verma – Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f2f5f9; --surface: #ffffff; --ink: #14213d; --muted: #52607a;
+  --accent: #1d4ed8; --accent-ink: #ffffff; --line: #d5dce8;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0f1626; --surface: #18223a; --ink: #eaf0fb; --muted: #9aa8c4;
+    --accent: #7aa2ff; --accent-ink: #0f1626; --line: #2a3654;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f1626; --surface: #18223a; --ink: #eaf0fb; --muted: #9aa8c4;
+  --accent: #7aa2ff; --accent-ink: #0f1626; --line: #2a3654;
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6; font-size: 1.05rem;
+}
+a { color: var(--accent); }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 1.25rem; }
+nav { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 1.25rem; }
+nav a:first-child { margin-left: 0; color: var(--ink); font-weight: 600; }
+nav a:hover { color: var(--accent); }
+.hero { padding: 4rem 0 3rem; }
+.hero h1 { font-size: clamp(2.6rem, 9vw, 5.5rem); line-height: 1.02; margin: 0 0 1.25rem; font-weight: 800; letter-spacing: -0.03em; }
+.hero p { max-width: 34rem; color: var(--muted); font-size: 1.25rem; margin: 0 0 2rem; }
+.btn { display: inline-block; background: var(--accent); color: var(--accent-ink); padding: .8rem 1.4rem; border-radius: 999px; text-decoration: none; font-weight: 600; }
+.btn.alt { background: transparent; color: var(--ink); border: 1.5px solid var(--line); margin-left: .5rem; }
+section { padding: 3rem 0; border-top: 1px solid var(--line); }
+h2 { font-size: 1.9rem; margin: 0 0 1.25rem; letter-spacing: -0.02em; }
+.about { max-width: 38rem; }
+.projects { display: grid; gap: 1rem; }
+.project { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.4rem 1.5rem; }
+.project h3 { margin: 0 0 .35rem; font-size: 1.3rem; }
+.project p { margin: 0 0 .75rem; color: var(--muted); }
+.tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .75rem; }
+.tags span { font-size: .85rem; padding: .15rem .7rem; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.skills { display: flex; flex-wrap: wrap; gap: .6rem; padding: 0; list-style: none; margin: 0; }
+.skills li { background: var(--surface); border: 1px solid var(--line); padding: .45rem 1rem; border-radius: 10px; }
+footer { padding: 2.5rem 0 3rem; color: var(--muted); border-top: 1px solid var(--line); font-size: .95rem; }
+@media (max-width: 520px) { nav a { margin-left: .9rem; } .btn.alt { margin: .6rem 0 0; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a href="#top">Sachin Verma</a>
+    <div><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <header class="hero" id="top">
+    <h1>Hi, I’m Sachin Verma.</h1>
+    <p>Software developer passionate about building modern web applications and solving real-world problems.</p>
+    <a class="btn" href="#work">See my work</a>
+    <a class="btn alt" href="#contact">Get in touch</a>
+  </header>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p class="about">I’m Sachin Verma, a Computer Science student passionate about building modern web applications and continuously learning new technologies. I enjoy transforming ideas into practical digital solutions while improving my development skills through real-world projects.</p>
+  </section>
+
+  <section id="work">
+    <h2>Selected work</h2>
+    <div class="projects">
+
+      <article class="project">
+        <h3>Project 1: Cafe Menu</h3>
+        <p>A responsive cafe menu page that shows the items of the cafe with their prices.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span></div>
+        <a href="https://vermasachin1712.github.io/cafe-menu-website/">View project</a>
+      </article>
+
+      <article class="project">
+        <h3>Project 2: Calculator</h3>
+        <p>A working calculator that shows functions, buttons and logic.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a href="https://vermasachin1712.github.io/calculator/">View project</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Let’s talk</h2>
+    <p>The best way to reach me is email: <a href="mailto:verma.sachin171204@gmail.com">verma.sachin171204@gmail.com</a></p>
+    <p><a href="https://github.com/vermasachin1712">GitHub: vermasachin1712</a></p>
+  </section>
+
+  <footer>© <span id="year">2026</span> Sachin Verma</footer>
+</div>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
